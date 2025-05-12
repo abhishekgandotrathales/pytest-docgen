@@ -139,8 +139,8 @@ def setup(app):
     app.add_directive("collapsible-block", CollapsibleBlock)
     app.connect("build-finished", copy_asset_files)
 
-    app.add_javascript("collapsible_block.js")
-    app.add_stylesheet("collapsible_block.css")
+    app.add_js_file("collapsible_block.js")
+    app.add_css_file("collapsible_block.css")
 
     return {
         "parallel_read_safe": True,
